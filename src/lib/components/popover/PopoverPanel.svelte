@@ -93,6 +93,7 @@
     // but it will also "fix" some issues based on whether you are using a
     // Portal or not.
     event.preventDefault();
+    event.stopImmediatePropagation();
 
     let result = focusIn(
       $panelStore,
